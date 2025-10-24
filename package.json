@@ -1,0 +1,19 @@
+{
+  "name": "multi-app-auth",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev:nextjs\" \"npm run dev:user-app\"",
+    "dev:nextjs": "cd apps/nextjs-app && npm run dev",
+    "dev:user-app": "cd apps/user-app && npm run dev:server",
+    "build": "npm run build:nextjs && npm run build:user-app",
+    "build:nextjs": "cd apps/nextjs-app && npm run build",
+    "build:user-app": "cd apps/user-app && npm run build"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
