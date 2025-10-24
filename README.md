@@ -29,7 +29,8 @@ multi-app-auth/
 
 1. **Clonar el repositorio**
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/vladimiroballesteros/multi-app-auth.git
+   
    cd multi-app-auth
    
 
@@ -39,25 +40,35 @@ multi-app-auth/
 3. ### Instalar dependencias de cada aplicación
     # Next.js App
     cd apps/nextjs-app
+    npm run build
     npm install
 
     # User App
     cd ../user-app
+    npm run build
     npm install
 
 4. ### Ejecutar de forma global de aplicación con
     # Desde la raíz del proyecto
     cd multi-app-auth
+
+    npm run build
+
     npm run dev
 
     #### y si desea realizala por separado 
     #### Terminal 1 - Next.js App:
     cd apps/nextjs-app
+
+    npm run build
+    
     npm run dev
 
     #### Terminal 2 - User App::
     cd apps/user-app
+
     npm run build
+
     npm run dev:server
 
 5. ### URLs de Desarrollo
