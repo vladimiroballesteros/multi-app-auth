@@ -40,12 +40,12 @@ multi-app-auth/
 3. ### Instalar dependencias de cada aplicación
     # Next.js App
     cd apps/nextjs-app
-    npm run build
+
     npm install
 
     # User App
     cd ../user-app
-    npm run build
+    
     npm install
 
 4. ### Ejecutar de forma global de aplicación con
